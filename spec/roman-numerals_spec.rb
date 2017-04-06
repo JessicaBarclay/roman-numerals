@@ -17,4 +17,8 @@ describe RomanNumerals do
     expect(RomanNumerals.convert(7)).to eq "VII"
   end
 
+  it "when passed 999 should return 'CMXCIX'" do
+    expect(RomanNumerals.convert(999)).to eq "CMXCIX"
+  end
+
 end
