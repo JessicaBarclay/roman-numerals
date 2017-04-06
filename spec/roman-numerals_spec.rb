@@ -21,4 +21,24 @@ describe RomanNumerals do
     expect(RomanNumerals.convert(999)).to eq "CMXCIX"
   end
 
+  it "when passed 1450 should return 'MCDL'" do
+    expect(RomanNumerals.convert(1450)).to eq "MCDL"
+  end
+
+  it "when passed 218 should return 'CCXVIII'" do
+    expect(RomanNumerals.convert(218)).to eq "CCXVIII"
+  end
+
+  it "when passed 789 should return 'DCCLXXXIX'" do
+    expect(RomanNumerals.convert(789)).to eq "DCCLXXXIX"
+  end
+
+  it "when passed 83 should return 'LXXXIII'" do
+    expect(RomanNumerals.convert(83)).to eq "LXXXIII"
+  end
+
+  it "when passed 3333 should return'MMMCCCXXXIII'" do
+    expect(RomanNumerals.convert(3333)).to eq "MMMCCCXXXIII"
+  end
+
 end
